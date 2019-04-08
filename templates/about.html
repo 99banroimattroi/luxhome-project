@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Lux Home Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename ='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename ='styleabout.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title"><strong style="font-size: 16px;"> Lux Home </strong></span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link" href="/">Home</a>
+                    <a class="mdl-navigation__link" href="/search">Search</a>
+                    <a class="mdl-navigation__link is-active" href="/about">About</a>
+                    <a class="mdl-navigation__link" href="/feedback">Feedback</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/search">Search</a>
+                <a class="mdl-navigation__link" href="/about">About</a>
+                <a class="mdl-navigation__link" href="/feedback">Feedback</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">About</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="../static/images/about-header.jpg" border="0" alt="">
+                    </div>
+
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+                            <p style="font-size: 15px">
+                                Xin chào, chúng tôi là 5 anh em siêu nhân 😀. Nhóm của chúng tôi gồm 5 thành viên, 
+                                tình cờ chúng tôi được biết đến TechKid và đã cùng tham gia lớp C4E26, 
+                                chúng tôi đã cùng trải qua 2 tháng học tại đây và đã tích lũy đươc những kiến thức cho bản thân mình để rồi cùng nhau tạo nên 1 WebSite này.
+                            </p>
+                        </div>
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Website information</h3>
+                        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+                            <p style="font-size: 15px">
+                                Để có được website này để phục vụ mọi người, chúng tôi đã dành ra 2 tuần để lên kế hoạch và 
+                                thực hiện với mong muốn có thể giúp đỡ những khách du lịch muốn tìm chỗ ở tại thành phố Hà Nội
+                            </p>
+                        </div>
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Member</h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="#mem1" data-toggle="collapse">
+                                    <img src="../static/images/demo01.jpg" class="img-circle person" alt="Random Name" width="250" height="250">
+                                    </a>
+                                    <div id="mem1" class="collapse">
+                                        <p>Trần Việt Hoàng (Max)</p>
+                                        <p>Main: Front-End</p>
+                                        <p><a href="https://www.facebook.com/viethoangmax.steam">Link</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#mem2" data-toggle="collapse">
+                                    <img src="../static/images/thao.PNG" class="img-circle person" alt="Random Name" width="250" height="250">
+                                    </a>
+                                    <div id="mem2" class="collapse">
+                                        <p>Phạm Thành Thảo</p>
+                                        <p>Main: Interner</p>
+                                        <p><a href="https://www.facebook.com/thaovit.98">Link</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#mem3" data-toggle="collapse">
+                                    <img src="../static/images/tanh.PNG" class="img-circle person" alt="Random Name" width="250" height="250">
+                                    </a>
+                                    <div id="mem3" class="collapse">
+                                        <p>Nguyễn Tiến Anh</p>
+                                        <p>Main: Back-End</p>
+                                        <p><a href="https://www.facebook.com/caube.gio.739">Link</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-sm-4">
+                                    <a href="#mem4" data-toggle="collapse">
+                                    <img src="../static/images/hung.PNG" class="img-circle person" alt="Random Name" width="250" height="250">
+                                    </a>
+                                    <div id="mem4" class="collapse">
+                                        <p>Trịnh Đình Hùng</p>
+                                        <p>Main: Database</p>
+                                        <p><a href="https://www.facebook.com/thanhthai.uy">Link</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#mem5" data-toggle="collapse">
+                                    <img src="../static/images/dung.PNG" class="img-circle person" alt="Random Name" width="250" height="250">
+                                    </a>
+                                    <div id="mem5" class="collapse">
+                                        <p>Phạm Tuấn Dũng</p>
+                                        <p>Support: Database</p>
+                                        <p><a href="https://www.facebook.com/dungnadh/timeline?lst=100004619134976%3A100005274552586%3A1554122670">Link</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#mem6" data-toggle="collapse">
+                                    <img src="../static/images/TechKids.jpg" class="img-circle person" alt="Random Name" width="250" height="250">
+                                    </a>
+                                    <div id="mem6" class="collapse">
+                                        <p>TechKids</p>
+                                        <p>Support: Instruct</p>
+                                        <p><a href="https://www.facebook.com/Techkids.Code.the.Change/">Links</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo"><a href="/login">Admin</a></div>
+                </div>
+                <div class="mdl-mini-footer__center-section">
+                    <div><strong>Follow</strong></div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="#"><img class="image-icon" src="../static/images/facebook.png" alt="" border="0"></a></li>
+                            <li><a href="#"><img class="image-icon" src="../static/images/google-plus.png" alt="" border="0"></a></li>
+                            <li><a href="#"><img class="image-icon" src="../static/images/linkedin.png" alt="" border="0"></a></li>
+                        </ul>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
